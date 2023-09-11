@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370625002AAF246B00FF9FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370624FF2AAF246B00FF9FB3 /* AppDelegate.swift */; };
+		370625022AAF246B00FF9FB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370625012AAF246B00FF9FB3 /* SceneDelegate.swift */; };
+		370625042AAF246B00FF9FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370625032AAF246B00FF9FB3 /* ViewController.swift */; };
+		370625072AAF246B00FF9FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370625052AAF246B00FF9FB3 /* Main.storyboard */; };
+		370625092AAF246C00FF9FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370625082AAF246C00FF9FB3 /* Assets.xcassets */; };
+		3706250C2AAF246C00FF9FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3706250A2AAF246C00FF9FB3 /* LaunchScreen.storyboard */; };
+		370625172AAF246C00FF9FB3 /* Cook_a_TonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370625162AAF246C00FF9FB3 /* Cook_a_TonTests.swift */; };
+		370625212AAF246C00FF9FB3 /* Cook_a_TonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370625202AAF246C00FF9FB3 /* Cook_a_TonUITests.swift */; };
+		370625232AAF246C00FF9FB3 /* Cook_a_TonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370625222AAF246C00FF9FB3 /* Cook_a_TonUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		370625132AAF246C00FF9FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 370624F42AAF246B00FF9FB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 370624FB2AAF246B00FF9FB3;
+			remoteInfo = "Cook-a-Ton";
+		};
+		3706251D2AAF246C00FF9FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 370624F42AAF246B00FF9FB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 370624FB2AAF246B00FF9FB3;
+			remoteInfo = "Cook-a-Ton";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370624FC2AAF246B00FF9FB3 /* Cook-a-Ton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cook-a-Ton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		370624FF2AAF246B00FF9FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		370625012AAF246B00FF9FB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		370625032AAF246B00FF9FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		370625062AAF246B00FF9FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		370625082AAF246C00FF9FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3706250B2AAF246C00FF9FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3706250D2AAF246C00FF9FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		370625122AAF246C00FF9FB3 /* Cook-a-TonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cook-a-TonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		370625162AAF246C00FF9FB3 /* Cook_a_TonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cook_a_TonTests.swift; sourceTree = "<group>"; };
+		3706251C2AAF246C00FF9FB3 /* Cook-a-TonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cook-a-TonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		370625202AAF246C00FF9FB3 /* Cook_a_TonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cook_a_TonUITests.swift; sourceTree = "<group>"; };
+		370625222AAF246C00FF9FB3 /* Cook_a_TonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cook_a_TonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		370624F92AAF246B00FF9FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706250F2AAF246C00FF9FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370625192AAF246C00FF9FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		370624F32AAF246B00FF9FB3 = {
+			isa = PBXGroup;
+			children = (
+				370624FE2AAF246B00FF9FB3 /* Cook-a-Ton */,
+				370625152AAF246C00FF9FB3 /* Cook-a-TonTests */,
+				3706251F2AAF246C00FF9FB3 /* Cook-a-TonUITests */,
+				370624FD2AAF246B00FF9FB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		370624FD2AAF246B00FF9FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				370624FC2AAF246B00FF9FB3 /* Cook-a-Ton.app */,
+				370625122AAF246C00FF9FB3 /* Cook-a-TonTests.xctest */,
+				3706251C2AAF246C00FF9FB3 /* Cook-a-TonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		370624FE2AAF246B00FF9FB3 /* Cook-a-Ton */ = {
+			isa = PBXGroup;
+			children = (
+				370624FF2AAF246B00FF9FB3 /* AppDelegate.swift */,
+				370625012AAF246B00FF9FB3 /* SceneDelegate.swift */,
+				370625032AAF246B00FF9FB3 /* ViewController.swift */,
+				370625052AAF246B00FF9FB3 /* Main.storyboard */,
+				370625082AAF246C00FF9FB3 /* Assets.xcassets */,
+				3706250A2AAF246C00FF9FB3 /* LaunchScreen.storyboard */,
+				3706250D2AAF246C00FF9FB3 /* Info.plist */,
+			);
+			path = "Cook-a-Ton";
+			sourceTree = "<group>";
+		};
+		370625152AAF246C00FF9FB3 /* Cook-a-TonTests */ = {
+			isa = PBXGroup;
+			children = (
+				370625162AAF246C00FF9FB3 /* Cook_a_TonTests.swift */,
+			);
+			path = "Cook-a-TonTests";
+			sourceTree = "<group>";
+		};
+		3706251F2AAF246C00FF9FB3 /* Cook-a-TonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				370625202AAF246C00FF9FB3 /* Cook_a_TonUITests.swift */,
+				370625222AAF246C00FF9FB3 /* Cook_a_TonUITestsLaunchTests.swift */,
+			);
+			path = "Cook-a-TonUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		370624FB2AAF246B00FF9FB3 /* Cook-a-Ton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370625262AAF246C00FF9FB3 /* Build configuration list for PBXNativeTarget "Cook-a-Ton" */;
+			buildPhases = (
+				370624F82AAF246B00FF9FB3 /* Sources */,
+				370624F92AAF246B00FF9FB3 /* Frameworks */,
+				370624FA2AAF246B00FF9FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cook-a-Ton";
+			productName = "Cook-a-Ton";
+			productReference = 370624FC2AAF246B00FF9FB3 /* Cook-a-Ton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		370625112AAF246C00FF9FB3 /* Cook-a-TonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370625292AAF246C00FF9FB3 /* Build configuration list for PBXNativeTarget "Cook-a-TonTests" */;
+			buildPhases = (
+				3706250E2AAF246C00FF9FB3 /* Sources */,
+				3706250F2AAF246C00FF9FB3 /* Frameworks */,
+				370625102AAF246C00FF9FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				370625142AAF246C00FF9FB3 /* PBXTargetDependency */,
+			);
+			name = "Cook-a-TonTests";
+			productName = "Cook-a-TonTests";
+			productReference = 370625122AAF246C00FF9FB3 /* Cook-a-TonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3706251B2AAF246C00FF9FB3 /* Cook-a-TonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3706252C2AAF246C00FF9FB3 /* Build configuration list for PBXNativeTarget "Cook-a-TonUITests" */;
+			buildPhases = (
+				370625182AAF246C00FF9FB3 /* Sources */,
+				370625192AAF246C00FF9FB3 /* Frameworks */,
+				3706251A2AAF246C00FF9FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3706251E2AAF246C00FF9FB3 /* PBXTargetDependency */,
+			);
+			name = "Cook-a-TonUITests";
+			productName = "Cook-a-TonUITests";
+			productReference = 3706251C2AAF246C00FF9FB3 /* Cook-a-TonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		370624F42AAF246B00FF9FB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					370624FB2AAF246B00FF9FB3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					370625112AAF246C00FF9FB3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 370624FB2AAF246B00FF9FB3;
+					};
+					3706251B2AAF246C00FF9FB3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 370624FB2AAF246B00FF9FB3;
+					};
+				};
+			};
+			buildConfigurationList = 370624F72AAF246B00FF9FB3 /* Build configuration list for PBXProject "Cook-a-Ton" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 370624F32AAF246B00FF9FB3;
+			productRefGroup = 370624FD2AAF246B00FF9FB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				370624FB2AAF246B00FF9FB3 /* Cook-a-Ton */,
+				370625112AAF246C00FF9FB3 /* Cook-a-TonTests */,
+				3706251B2AAF246C00FF9FB3 /* Cook-a-TonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		370624FA2AAF246B00FF9FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706250C2AAF246C00FF9FB3 /* LaunchScreen.storyboard in Resources */,
+				370625092AAF246C00FF9FB3 /* Assets.xcassets in Resources */,
+				370625072AAF246B00FF9FB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370625102AAF246C00FF9FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706251A2AAF246C00FF9FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		370624F82AAF246B00FF9FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370625042AAF246B00FF9FB3 /* ViewController.swift in Sources */,
+				370625002AAF246B00FF9FB3 /* AppDelegate.swift in Sources */,
+				370625022AAF246B00FF9FB3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706250E2AAF246C00FF9FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370625172AAF246C00FF9FB3 /* Cook_a_TonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370625182AAF246C00FF9FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370625232AAF246C00FF9FB3 /* Cook_a_TonUITestsLaunchTests.swift in Sources */,
+				370625212AAF246C00FF9FB3 /* Cook_a_TonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		370625142AAF246C00FF9FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 370624FB2AAF246B00FF9FB3 /* Cook-a-Ton */;
+			targetProxy = 370625132AAF246C00FF9FB3 /* PBXContainerItemProxy */;
+		};
+		3706251E2AAF246C00FF9FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 370624FB2AAF246B00FF9FB3 /* Cook-a-Ton */;
+			targetProxy = 3706251D2AAF246C00FF9FB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		370625052AAF246B00FF9FB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				370625062AAF246B00FF9FB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3706250A2AAF246C00FF9FB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3706250B2AAF246C00FF9FB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		370625242AAF246C00FF9FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		370625252AAF246C00FF9FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		370625272AAF246C00FF9FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44TKH2KWS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cook-a-Ton/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pepperjackSOL.Cook-a-Ton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		370625282AAF246C00FF9FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44TKH2KWS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cook-a-Ton/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pepperjackSOL.Cook-a-Ton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3706252A2AAF246C00FF9FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44TKH2KWS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pepperjackSOL.Cook-a-TonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cook-a-Ton.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cook-a-Ton";
+			};
+			name = Debug;
+		};
+		3706252B2AAF246C00FF9FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44TKH2KWS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pepperjackSOL.Cook-a-TonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cook-a-Ton.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cook-a-Ton";
+			};
+			name = Release;
+		};
+		3706252D2AAF246C00FF9FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44TKH2KWS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pepperjackSOL.Cook-a-TonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cook-a-Ton";
+			};
+			name = Debug;
+		};
+		3706252E2AAF246C00FF9FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44TKH2KWS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pepperjackSOL.Cook-a-TonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cook-a-Ton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		370624F72AAF246B00FF9FB3 /* Build configuration list for PBXProject "Cook-a-Ton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370625242AAF246C00FF9FB3 /* Debug */,
+				370625252AAF246C00FF9FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370625262AAF246C00FF9FB3 /* Build configuration list for PBXNativeTarget "Cook-a-Ton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370625272AAF246C00FF9FB3 /* Debug */,
+				370625282AAF246C00FF9FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370625292AAF246C00FF9FB3 /* Build configuration list for PBXNativeTarget "Cook-a-TonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706252A2AAF246C00FF9FB3 /* Debug */,
+				3706252B2AAF246C00FF9FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3706252C2AAF246C00FF9FB3 /* Build configuration list for PBXNativeTarget "Cook-a-TonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706252D2AAF246C00FF9FB3 /* Debug */,
+				3706252E2AAF246C00FF9FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 370624F42AAF246B00FF9FB3 /* Project object */;
+}
