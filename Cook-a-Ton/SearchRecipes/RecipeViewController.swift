@@ -15,6 +15,8 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var btnGetRecipe: UIButton!
     @IBOutlet weak var imgRecipe: UIImageView!
     @IBOutlet weak var lblRecipeName: UILabel!
+    @IBOutlet weak var lblServings: UILabel!
+    @IBOutlet weak var lblTimeToMake: UILabel!
     
     
     // MARK: - Properties
@@ -29,6 +31,7 @@ class RecipeViewController: UIViewController {
         super.viewDidLoad()
         
         bindViewModel()
+        self.recipeViewModel.fetchRandomRecipe()
     }
     
     private func bindViewModel() {
@@ -53,8 +56,12 @@ class RecipeViewController: UIViewController {
             return
         }
         
-        self.lblRecipeName.text = recipe[0].recipes[0].title
-        setImageFromStringURL(stringUrl: recipe[0].recipes[0].image)
+        if let recipe = recipe.last?.recipes[0] {
+            self.lblRecipeName.text = recipe.title
+            self.lblServings.text = "Servings: \(recipe.servings)"
+            self.lblTimeToMake.text = "Time to make: \(recipe.readyInMinutes)"
+            self.setImageFromStringURL(stringUrl: recipe.image)
+        }
     }
     
     private func setImageFromStringURL(stringUrl: String) {
