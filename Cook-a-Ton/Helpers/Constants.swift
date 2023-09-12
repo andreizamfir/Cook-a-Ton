@@ -13,4 +13,5 @@ let kBaseUrl = "https://api.spoonacular.com/"
 let kRandomRecipeUrl = "recipes/random"
 let kAddApiKey = "?apiKey="
 
-// MARK: - 
+// MARK: - Identifiers
+let kIngredientCellIdentifier = "ingredientCell"

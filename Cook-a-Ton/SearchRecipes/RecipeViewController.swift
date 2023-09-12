@@ -8,6 +8,8 @@
 import UIKit
 import Combine
 
+class IngredientsTableViewDiffableDataSource: UITableViewDiffableDataSource<String, Ingredient> {}
+
 class RecipeViewController: UIViewController {
     
     // MARK: - IBOutlets
@@ -15,8 +17,9 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var btnGetRecipe: UIButton!
     @IBOutlet weak var imgRecipe: UIImageView!
     @IBOutlet weak var lblRecipeName: UILabel!
-    @IBOutlet weak var lblServings: UILabel!
     @IBOutlet weak var lblTimeToMake: UILabel!
+    @IBOutlet weak var lblServings: UILabel!
+    @IBOutlet weak var tvIngredients: UITableView!
     
     
     // MARK: - Properties
@@ -30,6 +33,8 @@ class RecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initializeTableView()
+        setupObservers()
         bindViewModel()
         self.recipeViewModel.fetchRandomRecipe()
     }
@@ -39,6 +44,26 @@ class RecipeViewController: UIViewController {
             self.updateViewData(recipe)
         })
         .store(in: &cancellables)
+    }
+    
+    
+    // MARK: - Initialization
+    
+    private func initializeTableView() {
+        tvIngredients.register(UINib(nibName: "IngredientCell", bundle: nil), forCellReuseIdentifier: kIngredientCellIdentifier)
+    }
+    
+    private func setupObservers() {
+        recipeViewModel.diffableDataSource = IngredientsTableViewDiffableDataSource(tableView: tvIngredients) { (tableView, indexPath, model) -> UITableViewCell? in
+                    
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: kIngredientCellIdentifier, for: indexPath) as? IngredientCell
+            else {
+                return UITableViewCell()
+            }
+                    
+            cell.ingredient = model
+            return cell
+        }
     }
     
     
@@ -58,8 +83,8 @@ class RecipeViewController: UIViewController {
         
         if let recipe = recipe.last?.recipes[0] {
             self.lblRecipeName.text = recipe.title
+            self.lblTimeToMake.text = "Time to make: \(recipe.readyInMinutes) mins"
             self.lblServings.text = "Servings: \(recipe.servings)"
-            self.lblTimeToMake.text = "Time to make: \(recipe.readyInMinutes)"
             self.setImageFromStringURL(stringUrl: recipe.image)
         }
     }

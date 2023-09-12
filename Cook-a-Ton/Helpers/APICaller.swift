@@ -8,6 +8,12 @@
 import Foundation
 import Combine
 
+// MARK: - Source
+// https://medium.com/@hemalasanka/making-api-calls-with-ios-combines-future-publisher-7a5011f81c2
+
+
+// MARK: - Error types
+
 enum NetworkError: Error {
     case invalidURL
     case responseError
@@ -26,6 +32,8 @@ extension NetworkError: LocalizedError {
         }
     }
 }
+
+// MARK: - Singleton NetworkManager
 
 class APICaller{
     static let shared = APICaller()

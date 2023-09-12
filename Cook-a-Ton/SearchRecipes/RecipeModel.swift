@@ -19,19 +19,36 @@ struct RecipeData: Codable {
     
     enum CodingKeys: String, CodingKey {
         case id
-        case title = "title"
-        case image = "image"
-        case readyInMinutes, servings
+        case title
+        case image
+        case readyInMinutes
+        case servings
         case extendedIngredients
     }
 }
 
 struct Ingredient: Codable {
-    let name, image: String
+    let uuid = UUID()
+    
+    let name, unit: String
+    let amount: Double
     
     enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case image = "image"
+        case name
+        case unit
+        case amount
     }
     
+}
+
+// Make sure the compiler identifies the unique items correctly
+extension Ingredient: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.uuid)
+    }
+
+    public static func == (lhs: Ingredient, rhs: Ingredient) -> Bool {
+        return lhs.uuid == rhs.uuid
+    }
+
 }
