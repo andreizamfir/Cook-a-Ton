@@ -33,29 +33,30 @@ extension NetworkError: LocalizedError {
     }
 }
 
+
 // MARK: - Singleton NetworkManager
 
 class APICaller{
     static let shared = APICaller()
     
-    private var cancellables = Set<AnyCancellable>() // (3)
+    private var cancellables = Set<AnyCancellable>()
         
      func getData<T: Decodable>(endpoint: String, id: Int? = nil, type: T.Type) -> Future<T, Error> {
-        return Future<T, Error> { [weak self] promise in  // (4) -> Future Publisher
+        return Future<T, Error> { [weak self] promise in
             guard let self = self, let url = URL(string: endpoint) else {
                 return promise(.failure(NetworkError.invalidURL))
             }
             
-            URLSession.shared.dataTaskPublisher(for: url) // (5) -> Publisher
-                .tryMap { (data, response) -> Data in  // (6) -> Operator
+            URLSession.shared.dataTaskPublisher(for: url)
+                .tryMap { (data, response) -> Data in
                     guard let httpResponse = response as? HTTPURLResponse, 200...299 ~= httpResponse.statusCode else {
                         throw NetworkError.responseError
                     }
                     return data
                 }
-                .decode(type: T.self, decoder: JSONDecoder())  // (7) -> Operator
-                .receive(on: RunLoop.main) // (8) -> Sheduler Operator
-                .sink(receiveCompletion: { (completion) in  // (9) -> Subscriber
+                .decode(type: T.self, decoder: JSONDecoder())
+                .receive(on: RunLoop.main)
+                .sink(receiveCompletion: { (completion) in
                     if case let .failure(error) = completion {
                         switch error {
                         case let decodingError as DecodingError:
@@ -66,10 +67,10 @@ class APICaller{
                             promise(.failure(NetworkError.unknown))
                         }
                     }
-                }, receiveValue: {  data in  // (10)
+                }, receiveValue: {  data in
                     promise(.success(data))
                 })
-                .store(in: &self.cancellables)  // (11)
+                .store(in: &self.cancellables)
         }
     }
     

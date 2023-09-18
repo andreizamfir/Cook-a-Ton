@@ -46,7 +46,10 @@ class RecipeViewModel: ObservableObject {
                 // Create a snapshot to populate with the state of data
                 self?.snapshot.deleteAllItems()
                 self?.snapshot.appendSections([""])
-                self?.snapshot.appendItems(appResponse.recipes[0].extendedIngredients, toSection: "")
+                
+                guard let firstRecipeData = appResponse.recipeData.first else { return }
+                
+                self?.snapshot.appendItems(firstRecipeData.extendedIngredients, toSection: "")
                 
                 // Apply the snapshot to reflect the changes in UI
                 if let snapshot = self?.snapshot {
