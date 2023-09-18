@@ -114,7 +114,7 @@
 				370624FF2AAF246B00FF9FB3 /* AppDelegate.swift */,
 				370625012AAF246B00FF9FB3 /* SceneDelegate.swift */,
 				3706252F2AAF266800FF9FB3 /* Main.storyboard */,
-				370625322AAF315400FF9FB3 /* SearchRecipes */,
+				370625322AAF315400FF9FB3 /* RandomRecipeScreen */,
 				370625392AAF352000FF9FB3 /* Helpers */,
 				370625082AAF246C00FF9FB3 /* Assets.xcassets */,
 				3706250A2AAF246C00FF9FB3 /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			path = "Cook-a-TonUITests";
 			sourceTree = "<group>";
 		};
-		370625322AAF315400FF9FB3 /* SearchRecipes */ = {
+		370625322AAF315400FF9FB3 /* RandomRecipeScreen */ = {
 			isa = PBXGroup;
 			children = (
 				370625402AB0584100FF9FB3 /* IngredientCell */,
@@ -148,7 +148,7 @@
 				370625352AAF33BF00FF9FB3 /* RecipeViewController.swift */,
 				370625372AAF340C00FF9FB3 /* RecipeViewModel.swift */,
 			);
-			path = SearchRecipes;
+			path = RandomRecipeScreen;
 			sourceTree = "<group>";
 		};
 		370625392AAF352000FF9FB3 /* Helpers */ = {
