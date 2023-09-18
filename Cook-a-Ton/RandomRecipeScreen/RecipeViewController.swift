@@ -81,7 +81,7 @@ class RecipeViewController: UIViewController {
             return
         }
         
-        if let recipe = recipe.last?.recipeData.first {
+        if let recipe = recipe.last?.recipes[0] {
             self.lblRecipeName.text = recipe.title
             self.lblTimeToMake.text = "Time to make: \(recipe.readyInMinutes) mins"
             self.lblServings.text = "Servings: \(recipe.servings)"
@@ -93,7 +93,7 @@ class RecipeViewController: UIViewController {
         if let url = URL(string: stringUrl) {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 
-                // Error handling
+                // Error handling...
                 guard let imageData = data else { return }
 
                 DispatchQueue.main.async {

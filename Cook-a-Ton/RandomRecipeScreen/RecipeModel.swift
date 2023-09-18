@@ -8,11 +8,7 @@
 import Foundation
 
 struct Recipe: Codable {
-    let recipeData: [RecipeData]
-    
-    enum CodingKeys: String, CodingKey {
-        case recipeData = "recipes"
-    }
+    let recipes: [RecipeData]
 }
 
 struct RecipeData: Codable {
