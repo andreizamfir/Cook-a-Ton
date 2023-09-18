@@ -1,24 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50E-j8-rij">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Fridge-->
+        <scene sceneID="vTm-Fv-BB8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Atj-UT-ICC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kvu-xg-GBw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="rLm-Hr-801"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Fridge" image="fork.knife.circle" catalog="system" id="bz0-hD-ffP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGJ-XY-9Fs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="868" y="-587"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="TqJ-ph-xHi">
+            <objects>
+                <viewController id="1az-7z-8yc" customClass="RecipeViewController" customModule="Cook_a_Ton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BGL-lO-DFh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgd-vd-jcY">
+                                <rect key="frame" x="104.66666666666669" y="118.99999999999999" width="184" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get a random recipe!"/>
+                                <connections>
+                                    <action selector="getRandomRecipe:" destination="1az-7z-8yc" eventType="touchUpInside" id="bpY-Sf-ShC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cbS-cG-l61">
+                                <rect key="frame" x="76.666666666666686" y="223.33333333333337" width="240" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Hmw-l3-uoQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="VmS-dh-7up"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xq4-Ga-MSk">
+                                <rect key="frame" x="15" y="383.33333333333331" width="363" height="24.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servings: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH7-69-Pis">
+                                <rect key="frame" x="15" y="422.66666666666669" width="363" height="20"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to make: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI7-bP-Hjv">
+                                <rect key="frame" x="139" y="457.66666666666669" width="115" height="20"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-vY-bqG">
+                                <rect key="frame" x="40" y="492.66666666666674" width="323" height="261.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QDY-dQ-Lmo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vgd-vd-jcY" firstAttribute="top" secondItem="QDY-dQ-Lmo" secondAttribute="top" constant="60" id="2zB-SM-VOr"/>
+                            <constraint firstItem="HI7-bP-Hjv" firstAttribute="centerX" secondItem="wH7-69-Pis" secondAttribute="centerX" id="5M0-lp-unm"/>
+                            <constraint firstItem="mNb-vY-bqG" firstAttribute="top" secondItem="HI7-bP-Hjv" secondAttribute="bottom" constant="15" id="5nF-lV-vs6"/>
+                            <constraint firstItem="wH7-69-Pis" firstAttribute="centerX" secondItem="Xq4-Ga-MSk" secondAttribute="centerX" id="FJQ-lA-26S"/>
+                            <constraint firstItem="QDY-dQ-Lmo" firstAttribute="trailing" secondItem="Xq4-Ga-MSk" secondAttribute="trailing" constant="15" id="ID3-vK-10u"/>
+                            <constraint firstItem="QDY-dQ-Lmo" firstAttribute="bottom" secondItem="mNb-vY-bqG" secondAttribute="bottom" constant="15" id="Jqu-4t-1KL"/>
+                            <constraint firstItem="cbS-cG-l61" firstAttribute="centerX" secondItem="QDY-dQ-Lmo" secondAttribute="centerX" id="PUH-TG-xKI"/>
+                            <constraint firstItem="wH7-69-Pis" firstAttribute="top" secondItem="Xq4-Ga-MSk" secondAttribute="bottom" constant="15" id="SY3-RI-fJs"/>
+                            <constraint firstItem="mNb-vY-bqG" firstAttribute="leading" secondItem="QDY-dQ-Lmo" secondAttribute="leading" constant="40" id="VV0-je-ggZ"/>
+                            <constraint firstItem="vgd-vd-jcY" firstAttribute="centerX" secondItem="QDY-dQ-Lmo" secondAttribute="centerX" id="Zq8-Ka-0jU"/>
+                            <constraint firstItem="cbS-cG-l61" firstAttribute="top" secondItem="vgd-vd-jcY" secondAttribute="bottom" constant="70" id="g7L-XP-axd"/>
+                            <constraint firstItem="HI7-bP-Hjv" firstAttribute="top" secondItem="wH7-69-Pis" secondAttribute="bottom" constant="15" id="kz0-IY-NRg"/>
+                            <constraint firstItem="QDY-dQ-Lmo" firstAttribute="trailing" secondItem="mNb-vY-bqG" secondAttribute="trailing" constant="30" id="p88-xg-rvk"/>
+                            <constraint firstItem="wH7-69-Pis" firstAttribute="width" secondItem="Xq4-Ga-MSk" secondAttribute="width" id="q3G-LR-3Vb"/>
+                            <constraint firstItem="Xq4-Ga-MSk" firstAttribute="leading" secondItem="QDY-dQ-Lmo" secondAttribute="leading" constant="15" id="sOc-uH-DzQ"/>
+                            <constraint firstItem="Xq4-Ga-MSk" firstAttribute="top" secondItem="cbS-cG-l61" secondAttribute="bottom" constant="30" id="shm-au-HJq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="magnifyingglass.circle" catalog="system" id="ZOJ-ER-5v9"/>
+                    <connections>
+                        <outlet property="btnGetRecipe" destination="vgd-vd-jcY" id="tKq-J4-tlk"/>
+                        <outlet property="imgRecipe" destination="cbS-cG-l61" id="Css-Lv-YlJ"/>
+                        <outlet property="lblRecipeName" destination="Xq4-Ga-MSk" id="Uwy-nX-yhS"/>
+                        <outlet property="lblServings" destination="HI7-bP-Hjv" id="h3K-gc-Ngx"/>
+                        <outlet property="lblTimeToMake" destination="wH7-69-Pis" id="Toy-A5-v0C"/>
+                        <outlet property="tvIngredients" destination="mNb-vY-bqG" id="ZrK-Ab-DVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKE-uO-ZJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="-1249"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Gls-y9-QL5">
+            <objects>
+                <tabBarController id="50E-j8-rij" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Dv-pm-bZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1az-7z-8yc" kind="relationship" relationship="viewControllers" id="VzY-ML-Tou"/>
+                        <segue destination="Atj-UT-ICC" kind="relationship" relationship="viewControllers" id="TGy-7Z-rSC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoF-QZ-YDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37" y="-945"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
